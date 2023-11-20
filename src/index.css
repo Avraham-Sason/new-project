@@ -1,18 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-  --primary: #666666 ;
-  --secondary: #FEC130;
 
-}
-
-.bg-primary{
-  background: var(--primary) ;
-}
-.bg-secondary{
-  background: var(--secondary) ;
-}
 *{
   box-sizing: border-box;
   font-family: 'Assistant', sans-serif;
