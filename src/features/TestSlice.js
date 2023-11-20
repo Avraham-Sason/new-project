@@ -2,8 +2,8 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = [
     {
-        id: '1',
-        userId:"2",
+        id: nanoid(),
+        userId:"",
         title: 'test vork frop left div',
         content: "test vork frop rghite div.",
         reactions: {
@@ -17,7 +17,7 @@ const initialState = [
 ]
 
 const TestSlice = createSlice({
-    name: 'test',
+    name: 'tasks',
     initialState,
     reducers: {
         testAdded: {
@@ -43,13 +43,6 @@ const TestSlice = createSlice({
                 state.push(action.payload)
             }
         },
-        reactionAdded(state, action) {
-            const { postId, reaction } = action.payload
-            const existingPost = state.find(post => post.id === postId)
-            if (existingPost) {
-                existingPost.reactions[reaction]++
-            }
-        }
     }
 })
 
