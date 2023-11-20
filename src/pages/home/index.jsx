@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Content from "../../comps/content/Content";
-import Header from "../../comps/header/Heder";
+import Header from "../../comps/Header";
 import styles from './stayle.module.css'
 const Home = () => {
 
