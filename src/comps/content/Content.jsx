@@ -8,13 +8,13 @@ const Content = () => {
     return (
         <div className={`center ${styles.content}`}>
             <div className={`w-1/2 h-full center ${styles.contentLeft}`}>
-            {
+                {
                     test.map(v=>{
                         return <p id={v.title}>{v.title}</p>
                     })
                 }
             </div>
-            <div className={`w-1/2 h-full bg-orange-500 center ${styles.contentRight}`}>
+            <div className={`w-1/2 h-full bg- center ${styles.contentRight}`}>
                 {
                     test.map(v=>{
                         return <p id={v.title}>{v.content}</p>
