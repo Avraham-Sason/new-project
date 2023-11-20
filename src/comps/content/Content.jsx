@@ -7,17 +7,17 @@ const Content = () => {
     const test = useSelector(TestSelector)
     return (
         <div className={`center ${styles.content}`}>
-            <div className={`w-1/2 h-full center ${styles.contentLeft}`}>
+            <div className={`bg-primery w-1/2 h-full center ${styles.contentLeft}`}>
                 {
                     test.map(v=>{
-                        return <p id={v.title}>{v.title}</p>
+                        return <p className='text-xl font-m' id={v.title}>{v.title}</p>
                     })
                 }
             </div>
-            <div className={`w-1/2 h-full bg- center ${styles.contentRight}`}>
+            <div className={`bg-secondary w-1/2 h-full bg- center ${styles.contentRight}`}>
                 {
                     test.map(v=>{
-                        return <p id={v.title}>{v.content}</p>
+                        return <p className='text-xl font-m' id={v.title}>{v.content}</p>
                     })
                 }
             </div>
