@@ -3,21 +3,14 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 const initialState = [
     {
         id: nanoid(),
-        userId:"",
-        title: 'test vork frop left div',
-        content: "test vork frop rghite div.",
-        reactions: {
-            thumbsUp: 0,
-            wow: 0,
-            heart: 0,
-            rocket: 0,
-            coffee: 0
-        }
+        name:"test 1",
+        gender:"male",
+        
     }
 ]
 
 const TestSlice = createSlice({
-    name: 'tasks',
+    name: 'users',
     initialState,
     reducers: {
         testAdded: {
